@@ -1,0 +1,175 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7fb;
+    color: #263445;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #142d4e;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #244d78;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a9d6ff;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #244d78;
+    border-bottom: 2px solid #d5e5f5;
+    padding-bottom: 10px;
+}
+
+/* Portfolio image */
+#about img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Interest articles */
+article {
+    background-color: #edf4fb;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+article h3 {
+    color: #244d78;
+}
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #bdc9d6;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+button {
+    background-color: #244d78;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #142d4e;
+}
+
+/* Footer */
+footer {
+    background-color: #142d4e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* JavaScript interaction styles */
+.dark-mode {
+    background-color: #18212d;
+    color: #f1f5f9;
+}
+
+.dark-mode section {
+    background-color: #263648;
+    color: #f1f5f9;
+}
+
+.dark-mode section h2,
+.dark-mode article h3 {
+    color: #a9d6ff;
+}
+
+.dark-mode article {
+    background-color: #34475c;
+}
+
+#form-status {
+    color: #176b42;
+    font-weight: bold;
+}
+
+/* Responsive design for mobile devices */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #about img {
+        max-width: 100%;
+    }
+}

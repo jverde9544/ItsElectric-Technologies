@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Getting to know me and my interests.</p>
+            
+        //Switch to Dark Mode
+        <button id="theme-toggle" type="button">
+        </button>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#interests">My Interests</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm a college student interested in technology,
+                computers, and learning new skills. I enjoy working
+                on projects and developing my knowledge of programming.
+            </p>
+            <img
+                src="https://placehold.co/400x250"
+                alt="Placeholder image representing my personal portfolio">
+        </section>
+
+        <section id="interests">
+            <h2>My Interests</h2>
+
+            <article>
+                <h3>Technology</h3>
+                <p>I enjoy learning about computers, software, and technology.</p>
+            </article>
+
+            <article>
+                <h3>Programming</h3>
+                <p>I enjoy learning HTML and building websites.</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Send Message</button>
+                <p id="form-status"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Personal Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
